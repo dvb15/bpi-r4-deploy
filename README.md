@@ -47,7 +47,7 @@ No setup needed. Just follow the steps below.
 1. Go to [Releases](https://github.com/woziwrt/bpi-r4-deploy/releases/tag/release-sdcard) and download `openwrt-mediatek-filogic-bananapi_bpi-r4-sdcard.img.gz`.
 2. Flash it to your SD card using [Balena Etcher](https://etcher.balena.io/).
 3. Insert the SD card into BPI-R4, set DIP **SW3-A=0, SW3-B=0** and power on.
-4. Connect via SSH: `ssh root@192.168.1.1` (no password by default).
+4. Connect via SSH: `ssh root@192.168.1.1` (no password by default). Alternatively, open LuCI at **http://192.168.1.1 → Services → Terminal**.
 
 That's it — OpenWrt is running from your SD card.
 
@@ -74,7 +74,7 @@ The NVMe build includes:
 2. Flash it to your SD card using [Balena Etcher](https://etcher.balena.io/).
 3. Insert the SD card into BPI-R4.
 4. Set DIP **SW3-A=0, SW3-B=0** (SD boot) and power on.
-5. Connect via SSH: `ssh root@192.168.1.1` (no password).
+5. Connect via SSH: `ssh root@192.168.1.1` (no password). Alternatively, open LuCI at **http://192.168.1.1 → Services → Terminal**.
 
 #### Step 2 — Install NAND rescue system
 
@@ -86,7 +86,7 @@ Wait for the script to finish. Then:
 
 1. Power off BPI-R4.
 2. Set DIP **SW3-A=0, SW3-B=1** (NAND boot) and power on.
-3. Connect via SSH: `ssh root@192.168.1.1`
+3. Connect via SSH: `ssh root@192.168.1.1` — or open LuCI at **http://192.168.1.1 → Services → Terminal**.
 
 #### Step 3 — Install OpenWrt to NVMe
 
